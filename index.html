@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html class="full-height" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Waves Keeper</title>
+    <meta name="description" content="Material design landing page template built by TemplateFlip.com"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<body id="top">
+<header>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" id="navbar">
+        <div class="container"><a class="navbar-brand" href="#"><strong>Waves Keeper</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#try-it-now">Try it now</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-to-use">How to use</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#for-developers">For Developers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Widgets</a></li>
+                </ul>
+                <a class="btn btn-primary btn-rounded my-0"
+                   href="https://drive.google.com/drive/folders/1m4dD4C8pEJ4y6-hpauF9TGSIsevY-3me?usp=sharing"
+                   target="_blank">Install</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Intro Section-->
+    <section class="view hm-gradient" id="intro">
+        <div class="full-bg-img d-flex align-items-center">
+            <div class="container">
+                <div class="row no-gutters">
+                    <div class="col-md-10 col-lg-6 text-center text-md-left margins">
+                        <div class="white-text">
+                            <div class="wow fadeInLeft" data-wow-delay="0.3s">
+                                <h1 class="h1-responsive font-bold mt-sm-5">Waves Keeper</h1>
+                                <div class="h6">
+                                    The Waves browser extension allows to manage private keys and interact securely and
+                                    seamlessly with Waves-enabled web services and dApps.
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="wow fadeInLeft" data-wow-delay="0.3s"><a
+                                    class="btn btn-white dark-grey-text font-bold ml-0"
+                                    href="https://www.youtube.com/watch?v=wI9_69S3_mk" target="_blank"><i
+                                    class="fa fa-play mr-1"></i> View Demo</a>
+                                <a class="btn btn-outline-white"
+                                   target="_blank"
+                                   href="https://docs.wavesplatform.com/en/waves-client/account-management/waves-keeper.html">Learn
+                                    more</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<div id="content">
+    <section class="row no-gutters" id="features">
+        <div class="col-lg-3 col-md-6 col-sm-12 blue darken-1 text-white">
+            <div class="p-5 text-center wow zoomIn" data-wow-delay=".1s"><i class="fa fa-lightbulb-o fa-2x"></i>
+                <div class="h5 mt-3">Simple</div>
+                <p class="mt-5">Waves Keeper is the easiest way to work with 3-rd party applications. </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 blue darken-2 text-white">
+            <div class="p-5 text-center wow zoomIn" data-wow-delay=".3s"><i class="fa fa-shield fa-2x"></i>
+                <div class="h5 mt-3">Secure</div>
+                <p class="mt-5">Private keys are stored securely within the extension, you do not enter private keys or
+                    passwords for Waves-enabled web services and dApps.</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 blue darken-3 text-white">
+            <div class="p-5 text-center wow zoomIn" data-wow-delay=".5s"><i class="fa fa-tag fa-2x"></i>
+                <div class="h5 mt-3"> Free</div>
+                <p class="mt-5">Absolutely free. Forever.</p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 blue darken-4 text-white">
+            <div class="p-5 text-center wow zoomIn" data-wow-delay=".7s"><i class="fa fa-battery-full fa-2x"></i>
+                <div class="h5 mt-3"> Powerful</div>
+                <p class="mt-5">Multiple different accounts can be added and the user can switch between them
+                    effortlessly.</p>
+            </div>
+        </div>
+    </section>
+    <section class="text-center py-5 grey lighten-4" id="try-it-now">
+        <div class="container">
+            <div class="wow fadeIn">
+                <h2 class="h1 pt-5 pb-3">Try it now</h2>
+                <p class="px-5 mb-5 pb-3 lead blue-grey-text">
+                    Waves Keeper is your secure way to work with applications from the future Web 3.0. <br/>
+                    Waves Keeper gives access to your wallet data like address and public key, but only if you want it,
+                    and never gives access to your private key or seed phrase.
+                    <strong>Applications always must request for your approvement.</strong>
+                    <br>
+                    Click button below to give access to your address.
+                    </p>
+                <a class="btn btn-primary btn-rounded auth-btn" href="#">Show my Waves address</a>
+                <div class="alert alert-success hiddendiv" id="address"></div>
+                <div class="try-to-send-tx hiddendiv">
+                    Now let's try a transaction, you'll like that experience<br>
+                    <a class="btn btn-primary btn-rounded sign-and-publish-transaction-try" href="#">Send a transaction</a>
+                </div>
+                <div class="alert alert-success sign-and-publish-transaction-alert hiddendiv" id="sign-and-publish-transaction-alert"></div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="how-to-use">
+        <div class="container">
+            <div class="wow fadeIn">
+                <h2 class="text-center h1 my-4">How to use Waves Keeper?</h2>
+                <p class="px-5 mb-5 pb-3 lead blue-grey-text text-center">
+                    We recommend to use Waves Keeper with all 3-rd party applications, because it is secure and easy.
+                </p>
+            </div>
+            <div class="row wow fadeInLeft" data-wow-delay=".3s">
+                <div class="col-lg-6 col-xl-5 pr-lg-5 pb-5"><img class="img-fluid rounded z-depth-2"
+                                                                 src="img/waves-keeper.gif" alt="project image"/></div>
+                <div class="col-lg-6 col-xl-7 pl-lg-5 pb-4">
+                    <div class="row mb-3">
+                        <div class="col-1 mr-1"><i class="fa fa-play-circle fa-2x cyan-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Get started</h5>
+                            <p class="grey-text">
+                                After installation you will be able to find installed extension at the top right corner.
+                                Click on it and click on the Get Started.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1 mr-1"><i class="fa fa-lock fa-2x red-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Set password</h5>
+                            <p class="grey-text">
+                                Accept Terms and Conditions and in the following pop-up set your account password.
+                                Password you entered will be stored locally in your browser. Note: password is one for
+                                all accounts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 mr-1"><i class="fa fa-user-plus fa-2x waves-blue-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Work with accounts</h5>
+                            <p class="grey-text">
+                                You can create new accounts or import with seed phrase.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1 mr-1"><i class="fa fa-book fa-2x blue-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Learn more</h5>
+                            <p class="grey-text">
+                                Waves Keeper is designed for convenience, so you can sign transactions with just a
+                                couple of clicks. Check out the documentation to learn how to add accounts, switch
+                                between them, change settings and use in Waves Client.
+                                <br><strong><a class="btn btn-success btn-sm"
+                                               href="https://docs.wavesplatform.com/en/waves-client/account-management/waves-keeper.html"
+                                               target="_blank">Go to the docs</a></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="row pt-5 wow fadeInRight" data-wow-delay=".3s">
+                <div class="col-lg-5 col-xl-5 mb-3">
+                    <h5 class="font-bold">Use in Waves Client</h5>
+                    <p class="grey-text">
+                        We highly recommend to use Waves Keeper with <a href="https://client.wavesplatform.com"
+                                                                        target="_blank">Waves Client</a>.
+                    </p>
+                    <div class="row mb-3">
+                        <div class="col-1 mr-1"><i class="fa fa-sign-in fa-2x cyan-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Log in</h5>
+                            <p class="grey-text">
+                                You can easily import accounts from Waves Keeper and log in into them.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1 mr-1"><i class="fa fa-check-circle-o fa-2x blue-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">Confirm actions</h5>
+                            <p class="grey-text">
+                                Waves Client will require confirmation for all transactions and orders.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-1 mr-1"><i class="fa fa-shield fa-2x red-text"></i></div>
+                        <div class="col-10">
+                            <h5 class="font-bold">It is secure</h5>
+                            <p class="grey-text">
+                                It might look uncomfortable, but this way is most secure as well as hardware wallets</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xl-7 mb-3"><img class="img-fluid rounded z-depth-2"
+                                                         src="img/waves_keeper_11.png"/></div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center py-5 waves-blue text-white" id="for-developers">
+        <div class="container">
+            <div class="wow fadeIn">
+                <h2 class="h1 pt-5 pb-3">For developers</h2>
+                <p class="px-5 mb-5 pb-3 lead">
+                    Instead of asking seed phrase you can ask users to install Waves Keeper (if they didn't to it yet).
+                    Below you can find some details of how you can use Waves Keeper in your application.
+                </p>
+            </div>
+            <div class="row wow zoomIn text-dark">
+                <div class="card mb-2 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <p class="px-5 mb-2 pb-2 lead text-center">
+                            Waves object
+                        </p>
+                        <div class="row vertical-align">
+                            <div class="col-md-6">
+                                Waves Keeper injects <span class="badge badge-blue-grey">Waves</span> object to all
+                                pages. It
+                                is accessible from the global scope in your JS code. You can see the list of available
+                                functions on the right side. <br>
+                                Functions are mostly async and return <span class="badge badge-grey">Promise</span>.
+                            </div>
+                            <div class="col-md-6">
+                                <script src="https://gist.github.com/KardanovIR/98cedeb08db16caa35c9f513a20bcb9f.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row wow zoomIn text-dark">
+                <div class="card mb-2 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <p class="px-5 mb-2 pb-2 lead text-center">
+                            Get user data
+                        </p>
+                        <div class="row vertical-align">
+                            <div class="col-md-6">
+                                <script src="https://gist.github.com/KardanovIR/087ace5e473304b354dd14a7bba0fefc.js"></script>
+                            </div>
+                            <div class="col-md-6">
+                                Your application can request user data with <span
+                                    class="badge badge-blue-grey">auth</span> function. It returns <span
+                                    class="badge badge-grey">Promise</span>. As a result in the resolve function you can
+                                get an object with user data.
+                                <br>
+                                <div class="alert alert-info">
+                                    <strong>Note:</strong> Always check on your side correctness of the signature for
+                                    provided public key.
+                                </div>
+                                <a class="btn btn-primary btn-rounded auth-btn-try" href="#">Try it</a>
+                                <div class="alert alert-success hiddendiv" id="auth-result-alert"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row wow zoomIn text-dark">
+                <div class="card mb-2 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <p class="px-5 mb-2 pb-2 lead text-center">
+                            Sign anything
+                        </p>
+                        <div class="row vertical-align">
+                            <div class="col-md-6">
+                                With Waves Keeper you can sign transactions of any type with <span
+                                    class="badge badge-blue-grey">signTransaction()</span>, DEX orders and requests with
+                                <span
+                                        class="badge badge-blue-grey">signOrder()</span>, <span
+                                    class="badge badge-blue-grey">signCancelOrder()</span> and <span
+                                    class="badge badge-blue-grey">signRequest()</span> or any plain data with <span
+                                    class="badge badge-blue-grey">signBytes()</span>.
+                                <br>
+                                <div class="alert alert-info">
+                                    Note: All functions above will sign data (if user approve), but not send to the
+                                    network.
+                                    If you want to sign and send data see functions
+                                    <span
+                                            class="badge badge-blue-grey">signAndPublishOrder()</span>, <span
+                                        class="badge badge-blue-grey">signAndPublishCancelOrder()</span>, <span
+                                        class="badge badge-blue-grey">signAndPublishTransaction()</span>
+
+                                </div>
+                                <a class="btn btn-primary btn-rounded sign-and-publish-transaction" href="#">Try it</a>
+                                <div class="alert alert-success hiddendiv" id="sign-result-alert"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <script src="https://gist.github.com/KardanovIR/5167f437f69bde937706c513ff37d95b.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row wow zoomIn text-dark">
+                <div class="col-md-3"></div>
+                <div class="card mb-2 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <p class="px-5 mb-2 pb-2 lead text-center">
+                            Learn more
+                        </p>
+                        <div class="row vertical-align">
+                            <div class="col-md-12">
+                                Argument examples of all functions you can find in the documentation <br><a
+                                    href="https://docs.wavesplatform.com/en/development-and-api/waves-keeper-api/waves-keeper-api.html"
+                                    class="btn btn-sm btn-info" target="_blank">Go to docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-image:url('img/main@2x.jpg');">
+        <div class="rgba-black-strong py-5">
+            <div class="container">
+                <div class="wow fadeIn">
+                    <h2 class="h1 text-white pt-5 pb-3 text-center">Widgets for Waves Keeper</h2>
+                    <p class="text-white px-5 mb-5 pb-3 lead text-center">
+                        Waves Keeper allows to make interactive widgets on your website. You can find few examples below
+                    </p>
+                </div>
+                <div class="card mb-5 wow fadeInUp text-dark" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <div class="row">
+                            <h2 class="h1 pt-5 pb-3 text-center">For leasing pools</h2>
+                            <p class="px-5 mb-5 pb-3 lead text-center">
+                                If you have leasing pool and want to make user experience smoother, you can add widget
+                                to your website. It requires from user only to input amount of tokens, click a button
+                                and approve transaction in Waves Keeper.
+                            </p>
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form">
+                                                <input class="form-control" id="leasing-pool-address" type="text"
+                                                       name="subject" value="3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb"
+                                                       required="required"/>
+                                                <label for="leasing-pool-address">Your Leasing Pool Address</label>
+                                            </div>
+                                            <div class="md-form">
+                                                <input class="form-control" id="button-text-1" type="text" value="Lease"
+                                                       name="subject"
+                                                       required="required"/>
+                                                <label for="button-text-1">Button text</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <button class="btn btn-info" id="copy-leasing-widget-to-clipboard" type="button"><i
+                                        class="fa fa-floppy-o mr-1"></i> Copy code to clipboard
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                Preview:
+                                <iframe id="leasing-widget" scrolling="no" src="leasing-widget.html"
+                                        style="border: 0; width: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="card mb-5 wow fadeInUp text-dark" data-wow-delay=".4s">
+                    <div class="card-body p-5">
+                        <div class="row">
+                            <h2 class="h1 pt-5 pb-3 text-center">For donations</h2>
+                            <p class="px-5 mb-5 pb-3 lead text-center">
+                                With Waves Keeper is it really easy for users to make a donation. You can customize
+                                widget below and use it on your website.
+                            </p>
+                            <div class="col-md-6">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="md-form">
+                                                <input class="form-control" id="donation-address" type="text"
+                                                       name="subject"
+                                                       value="3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb"
+                                                       required="required"/>
+                                                <label for="donation-address">Your Address</label>
+                                            </div>
+                                            <div class="mb-3">
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset" value="WAVES"
+                                                           id="WAVES" checked disabled>
+                                                    <label class="custom-control-label" for="WAVES">WAVES</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset" checked
+                                                           value="8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS"
+                                                           id="8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS">
+                                                    <label class="custom-control-label"
+                                                           for="8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS">Bitcoin</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset" checked
+                                                           value="474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu"
+                                                           id="474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu">
+                                                    <label class="custom-control-label"
+                                                           for="474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu">Ethereum</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset"
+                                                           value="HZk1mbfuJpmxU1Fs4AX5MWLVYtctsNcg6e2C6VKqK8zk"
+                                                           id="HZk1mbfuJpmxU1Fs4AX5MWLVYtctsNcg6e2C6VKqK8zk">
+                                                    <label class="custom-control-label"
+                                                           for="HZk1mbfuJpmxU1Fs4AX5MWLVYtctsNcg6e2C6VKqK8zk">Litecoin</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset"
+                                                           value="BrjUWjndUanm5VsJkbUip8VRYy6LWJePtxya3FNv4TQa"
+                                                           id="BrjUWjndUanm5VsJkbUip8VRYy6LWJePtxya3FNv4TQa">
+                                                    <label class="custom-control-label"
+                                                           for="BrjUWjndUanm5VsJkbUip8VRYy6LWJePtxya3FNv4TQa">ZCash</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset"
+                                                           value="zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy"
+                                                           id="zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy">
+                                                    <label class="custom-control-label"
+                                                           for="zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy">Bitcoin
+                                                        Cash</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset"
+                                                           value="B3uGHFRpSUuGEDWjqB9LWWxafQj8VTvpMucEyoxzws5H"
+                                                           id="B3uGHFRpSUuGEDWjqB9LWWxafQj8VTvpMucEyoxzws5H">
+                                                    <label class="custom-control-label"
+                                                           for="B3uGHFRpSUuGEDWjqB9LWWxafQj8VTvpMucEyoxzws5H">Dash</label>
+                                                </div>
+                                                <div class="custom-control donate-asset custom-checkbox custom-control-inline">
+                                                    <input type="checkbox" class="custom-control-input"
+                                                           name="donate-asset"
+                                                           value="5WvPKSJXzVE2orvbkJ8wsQmmQKqTv9sGBPksV4adViw3"
+                                                           id="5WvPKSJXzVE2orvbkJ8wsQmmQKqTv9sGBPksV4adViw3">
+                                                    <label class="custom-control-label"
+                                                           for="5WvPKSJXzVE2orvbkJ8wsQmmQKqTv9sGBPksV4adViw3">Monero</label>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="md-form mt-2">
+                                                <input class="form-control" id="button-text-2" value="Donate"
+                                                       type="text" name="subject"
+                                                       required="required"/>
+                                                <label for="button-text-2">Button text</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <button class="btn btn-info" id="copy-donate-widget-to-clipboard" type="button"><i
+                                        class="fa fa-floppy-o mr-1"></i> Copy code to clipboard
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                Preview:
+                                <iframe src="donate-widget.html" id="donate-widget" scrolling="no"
+                                        style="border: 0; width: 100%;"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="page-footer indigo darken-2 center-on-small-only pt-0 mt-0">
+    <div class="container">
+
+    </div>
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            <p>&copy; <a href="/">Waves Keeper</a>
+            </p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script>
+    window.__WAVES = Waves;
+</script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>new WOW().init();
+$('document').ready(function () {
+
+    $('.auth-btn').on('click', function (e) {
+        console.log(e);
+        __WAVES.auth({name: 'Waves Keeper', data: 'Waves Keeper'})
+            .then(function (res) {
+                console.log(res);
+                $('#address')
+                    .html('Your current active address: <b>' + res.address + '</b>')
+                    .removeClass('hiddendiv');
+                $('.try-to-send-tx').removeClass('hiddendiv');
+            })
+            .catch(function (err) {
+                $('#address').html(JSON.stringify(err)).removeClass('hiddendiv alert-success').addClass('alert-danger');
+            });
+        e.preventDefault();
+    });
+
+    $('.auth-btn-try').on('click', function (e) {
+        __WAVES.auth({name: 'Waves Keeper', data: 'Waves Keeper'})
+            .then(function (res) {
+                $('#auth-result-alert')
+                    .text(JSON.stringify(res))
+                    .removeClass('hiddendiv');
+            })
+            .catch(function (err) {
+                $('#auth-result-alert').text(JSON.stringify(err)).removeClass('hiddendiv alert-success').addClass('alert-danger');
+            });
+        e.preventDefault();
+    });
+
+    $('.sign-and-publish-transaction').on('click', function (e) {
+        var $signResult = $('#sign-result-alert');
+        __WAVES.signAndPublishTransaction({
+            type: 4, // 4 - transfer transaction
+            data: {
+                amount: {
+                    assetId: 'WAVES',
+                    tokens: "0.00100000"
+                },
+                fee: {
+                    assetId: 'WAVES',
+                    tokens: "0.00100000"
+                },
+                recipient: '3P9E5QeGSF4As6kNtBi8j476gsM8mqnX12f'
+            }
+        })
+            .then(function (res) {
+                if (typeof res === 'string'){
+                    res = JSON.parse(res);
+                }
+                $signResult.text(JSON.stringify(res)).removeClass('hiddendiv');
+            })
+            .catch(function (err) {
+                $signResult.text(JSON.stringify(err))
+                    .removeClass('alert-success hiddendiv').addClass('alert-danger');
+                console.log(err);
+
+            });
+
+        e.preventDefault();
+    });
+
+    $('.sign-and-publish-transaction-try').on('click', function (e) {
+        var $signResult = $('#sign-and-publish-transaction-alert');
+        __WAVES.signAndPublishTransaction({
+            type: 4, // 4 - transfer transaction
+            data: {
+                amount: {
+                    assetId: 'WAVES',
+                    tokens: "0.00100000"
+                },
+                fee: {
+                    assetId: 'WAVES',
+                    tokens: "0.00100000"
+                },
+                recipient: '3P9E5QeGSF4As6kNtBi8j476gsM8mqnX12f'
+            }
+        })
+            .then(function (res) {
+                if (typeof res === 'string'){
+                    res = JSON.parse(res);
+                }
+                $signResult.html('Your transaction is send, see it in the explorer: <a target="_blank" href="http://wavesexplorer.com/tx/' + res.id + '">' + res.id + '</a>').removeClass('hiddendiv');
+            })
+            .catch(function (err) {
+                $signResult.text(JSON.stringify(err))
+                    .removeClass('alert-success hiddendiv').addClass('alert-danger');
+                console.log(err);
+
+            });
+
+        e.preventDefault();
+    });
+
+    function resizeIframe(obj) {
+        obj.style.height = 0;
+        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+    }
+
+
+    var leasingWidget = document.getElementById('leasing-widget');
+    var donateWidget = document.getElementById('donate-widget');
+
+    $('#leasing-pool-address').on('input', function (e) {
+        leasingWidget.contentWindow.WAVES_WIDGET_LEASING_POOL_ADDRESS = $(this).val();
+        leasingWidget.contentWindow.updateView();
+    });
+
+    $('#button-text-1').on('input', function (e) {
+        leasingWidget.contentWindow.WAVES_WIDGET_LEASING_BTN_TEXT = $(this).val();
+        leasingWidget.contentWindow.updateView();
+    });
+
+    $('#donation-address').on('input', function (e) {
+        donateWidget.contentWindow.WAVES_WIDGET_DONATION_ADDRESS = $(this).val();
+        donateWidget.contentWindow.updateView();
+    });
+
+    $('#button-text-2').on('input', function (e) {
+        donateWidget.contentWindow.WAVES_WIDGET_DONATION_BTN_TEXT = $(this).val();
+        donateWidget.contentWindow.updateView();
+    });
+
+    function getDonateAssets() {
+        var formData = $('.donate-asset:first').parents('form').serializeArray();
+        var donateAssets = ['WAVES'];
+        formData.forEach(function (itemData) {
+            if (itemData.name === 'donate-asset') {
+                donateAssets.push(itemData.value);
+            }
+        });
+        return donateAssets;
+    }
+
+    $('.donate-asset').on('change', function () {
+        donateWidget.contentWindow.WAVES_WIDGET_DONATION_ASSETS = getDonateAssets();
+        donateWidget.contentWindow.updateView();
+    });
+
+    leasingWidget.addEventListener('load', function () {
+        resizeIframe(leasingWidget);
+    }, false);
+
+    donateWidget.addEventListener('load', function () {
+        resizeIframe(donateWidget);
+    }, false);
+
+    $('#copy-leasing-widget-to-clipboard').on('click', function (e) {
+        var value = leasingWidget.contentDocument.body.innerHTML;
+        value = value.replace('3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb', $('#leasing-pool-address').val());
+        value = value.replace('WAVES_WIDGET_LEASING_BTN_TEXT = \'Lease\'', 'WAVES_WIDGET_LEASING_BTN_TEXT = \'' + $('#button-text-1').val() + '\'');
+        var textField = document.createElement('textarea');
+        textField.innerText = value;
+        document.body.appendChild(textField);
+        textField.select();
+        textField.focus(); //SET FOCUS on the TEXTFIELD
+        var result = document.execCommand('copy');
+        textField.remove();
+        e.preventDefault();
+        return false;
+    });
+
+    $('#copy-donate-widget-to-clipboard').on('click', function (e) {
+        var value = donateWidget.contentDocument.body.innerHTML;
+        value = value.replace('3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb', $('#donation-address').val());
+        value = value.replace('WAVES_WIDGET_DONATION_BTN_TEXT = \'Donate\'', 'WAVES_WIDGET_DONATION_BTN_TEXT = \'' + $('#button-text-2').val() + '\'');
+        value = value.replace('WAVES_WIDGET_DONATION_ASSETS = [\'WAVES\', \'8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS\', \'474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu\']', 'WAVES_WIDGET_DONATION_ASSETS = ' + JSON.stringify(getDonateAssets()));
+        var textField = document.createElement('textarea');
+        textField.innerText = value;
+        document.body.appendChild(textField);
+        textField.select();
+        textField.focus(); //SET FOCUS on the TEXTFIELD
+        var result = document.execCommand('copy');
+        textField.remove();
+        e.preventDefault();
+        return false;
+    });
+
+});
+
+</script>
+</body>
+</html>

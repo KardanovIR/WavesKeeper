@@ -1,0 +1,237 @@
+<!--Waves leasing widget-->
+<div style="margin-left: 15px; margin-right: 15px; width: 100%" id="waves-widget-rndm1610">
+    <style>.waves-widget-btn {
+        align-items: flex-start;
+        border: 1px solid #0056FF;
+        background-color: #0056FF;
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        display: inline-block;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-weight: 400;
+        height: 46px;
+        letter-spacing: normal;
+        line-height: 19px;
+        margin: 6px 6px 6px 0px;
+        overflow-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 13px 34px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: uppercase;
+        transition-delay: 0s;
+        transition-duration: 0.2s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        user-select: none;
+        vertical-align: middle;
+        visibility: visible;
+        white-space: normal;
+        width: auto;
+        word-spacing: 0px;
+        writing-mode: horizontal-tb;
+        z-index: 1;
+        -webkit-appearance: none;
+        -webkit-box-direction: normal;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-border-image: none;
+        outline: none;
+        text-decoration: none;
+    }
+
+    .waves-widget-btn:hover {
+        border: 1px solid #4c74f7;
+        background-color: #4c74f7;
+    }
+
+    .waves-widget-input {
+        background-clip: padding-box;
+        background: rgba(0, 0, 0, 0) none;
+        border-collapse: separate;
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-radius: 0px;
+        box-shadow: rgba(66, 133, 244, 0) 0px 0.00158028px 0px 0px;
+        box-sizing: content-box;
+        border: 0px none rgb(73, 80, 87);
+        border-bottom: 1px solid rgb(189, 189, 189);
+        color: rgb(73, 80, 87);
+        cursor: text;
+        display: block;
+        font-size: 16px;
+        font-stretch: 100%;
+        font-style: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: 24px;
+        margin: 3.2px 0px 16px;
+        outline: rgb(73, 80, 87) none 0px;
+        overflow-wrap: break-word;
+        overflow-x: visible;
+        overflow-y: visible;
+        padding: 8px 0px 2px;
+        text-align: start;
+        text-indent: 0px;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        text-transform: none;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: ease;
+        visibility: visible;
+        width: 100%;
+        word-spacing: 0px;
+        writing-mode: horizontal-tb;
+    }
+
+    .waves-widget-input:focus {
+        color: #495057;
+        border-color: #80bdff;
+        outline: 0;
+        background: 0 0;
+        border-bottom: 1px solid #4285F4;
+        box-shadow: 0 1px 0 0 #4285F4;
+    }
+
+    .waves-widget-label {
+        -webkit-transition: .2s ease-out;
+        transition: .2s ease-out;
+        color: #757575;
+        position: absolute;
+        top: 0.8rem; /*left: 0;*/
+        font-size: 1rem;
+        cursor: text;
+    }
+
+    .waves-widget-label.active {
+        -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
+        font-size: .8rem;
+        color: #4c74f7;
+    }
+
+    .waves-widget-wrapper {
+        width: auto;
+        max-width: 98%;
+        border: 1px #dae1e9 dotted;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        margin: 10px;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 4px;
+        box-shadow: 0 4px 6px 0 rgba(155, 166, 178, 0.4);
+        background-color: #F8F9FB;
+        position: relative;
+    }
+
+    .waves-widget-input-wrapper {
+        position: relative;
+    } </style>
+    <div class="waves-widget-wrapper">
+        <div class="waves-widget-input-wrapper" style="text-align: center">
+            <p>
+                Recipient
+                <br>
+                <strong id="waves-widget-address-text"></strong>
+            </p>
+        </div>
+        <div class="waves-widget-input-wrapper">
+            <input class="waves-widget-input" id="waves-widget-input" type="text"/>
+            <label for="waves-widget-input" class="waves-widget-label" id="waves-widget-label">Amount to lease
+                (WAVES)</label>
+        </div>
+        <div style="text-align: center">
+            <a class="waves-widget-btn" id="waves-widget-btn" href="#">Lease</a>
+        </div>
+    </div>
+    <script>
+        var WAVES_WIDGET_LEASING_POOL_ADDRESS = '3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb';
+        var WAVES_WIDGET_LEASING_BTN_TEXT = 'Lease';
+
+        function updateView() {
+            var addressEl = document.getElementById('waves-widget-address-text');
+            if (addressEl) {
+                addressEl.innerText = WAVES_WIDGET_LEASING_POOL_ADDRESS;
+            }
+            var btnEl = document.getElementById('waves-widget-btn');
+            if (btnEl) {
+                btnEl.innerText = WAVES_WIDGET_LEASING_BTN_TEXT;
+            }
+        }
+
+        (function () {
+            updateView();
+            document.getElementById('waves-widget-btn').addEventListener('click', function () {
+                if (window.hasOwnProperty('Waves')) {
+                    var leaseAmount = parseFloat(document.getElementById('waves-widget-input').value);
+                    if (isNaN(leaseAmount)) {
+                        alert('Please, write amount of tokens');
+                        return;
+                    }
+                    Waves.signAndPublishTransaction({
+                        type: 8,
+                        data: {
+                            fee: {
+                                assetId: 'WAVES',
+                                tokens: 0.01
+                            },
+                            amount: {
+                                assetId: 'WAVES',
+                                tokens: leaseAmount
+                            },
+                            recipient: WAVES_WIDGET_LEASING_POOL_ADDRESS
+                        }
+                    });
+                } else {
+                    var willInstall = confirm('Install Waves Keeper to use this widget. Press OK to open extension page.');
+                    if (willInstall) {
+                        window.open('https://chrome.google.com/webstore/detail/waves-keeper/lpilbniiabackdjcionkobglmddfbcjo?hl=en', '_blank');
+                    }
+                }
+            }, false);
+
+            document.getElementById('waves-widget-input').addEventListener('focus', function () {
+                document.getElementById('waves-widget-label').classList.add('active');
+            }, false);
+
+            document.getElementById('waves-widget-input').addEventListener('blur', function () {
+                if (this.value === '') {
+                    document.getElementById('waves-widget-label').classList.remove('active');
+                }
+            }, false);
+        })()
+    </script>
+</div>
+<!--Waves leasing widget-->
