@@ -354,7 +354,7 @@
                                         <div class="col-md-12">
                                             <div class="md-form">
                                                 <input class="form-control" id="leasing-pool-address" type="text"
-                                                       name="subject" value="3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb"
+                                                       name="subject" value="3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR"
                                                        required="required"/>
                                                 <label for="leasing-pool-address">Your Leasing Pool Address</label>
                                             </div>
@@ -396,7 +396,7 @@
                                             <div class="md-form">
                                                 <input class="form-control" id="donation-address" type="text"
                                                        name="subject"
-                                                       value="3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb"
+                                                       value="3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR"
                                                        required="required"/>
                                                 <label for="donation-address">Your Address</label>
                                             </div>
@@ -555,7 +555,7 @@ $('document').ready(function () {
                     assetId: 'WAVES',
                     tokens: "0.00100000"
                 },
-                recipient: '3P9E5QeGSF4As6kNtBi8j476gsM8mqnX12f'
+                recipient: '3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR'
             }
         })
             .then(function (res) {
@@ -587,7 +587,7 @@ $('document').ready(function () {
                     assetId: 'WAVES',
                     tokens: "0.00100000"
                 },
-                recipient: '3P9E5QeGSF4As6kNtBi8j476gsM8mqnX12f'
+                recipient: '3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR'
             }
         })
             .then(function (res) {
@@ -661,7 +661,7 @@ $('document').ready(function () {
 
     $('#copy-leasing-widget-to-clipboard').on('click', function (e) {
         var value = leasingWidget.contentDocument.body.innerHTML;
-        value = value.replace('3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb', $('#leasing-pool-address').val());
+        value = value.replace('3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR', $('#leasing-pool-address').val());
         value = value.replace('WAVES_WIDGET_LEASING_BTN_TEXT = \'Lease\'', 'WAVES_WIDGET_LEASING_BTN_TEXT = \'' + $('#button-text-1').val() + '\'');
         var textField = document.createElement('textarea');
         textField.innerText = value;
@@ -676,7 +676,7 @@ $('document').ready(function () {
 
     $('#copy-donate-widget-to-clipboard').on('click', function (e) {
         var value = donateWidget.contentDocument.body.innerHTML;
-        value = value.replace('3P2HNUd5VUPLMQkJmctTPEeeHumiPN2GkTb', $('#donation-address').val());
+        value = value.replace('3MyMDx1tQL5f9RGxR3tHZoj1P1R9wzQkhYR', $('#donation-address').val());
         value = value.replace('WAVES_WIDGET_DONATION_BTN_TEXT = \'Donate\'', 'WAVES_WIDGET_DONATION_BTN_TEXT = \'' + $('#button-text-2').val() + '\'');
         value = value.replace('WAVES_WIDGET_DONATION_ASSETS = [\'WAVES\', \'8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS\', \'474jTeYx2r2Va35794tCScAXWJG9hU2HcgxzMowaZUnu\']', 'WAVES_WIDGET_DONATION_ASSETS = ' + JSON.stringify(getDonateAssets()));
         var textField = document.createElement('textarea');
